@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* --- Colors --- */
+  --color-burnt-amber: #f57c00;
+  --color-cool-slate: #334155;
+  --color-soft-pearl: #f8f9fa;
+  --color-warm-grey: #e2e8f0;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* --- Brand Aliases --- */
+  --color-primary: var(--color-burnt-amber);
+  --color-secondary: var(--color-cool-slate);
+  --color-background: var(--color-soft-pearl);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* --- Typography --- */
+  /* Ensure these variable names match what you pass in your Next.js font loader */
+  --font-header: var(--font-poppins), ui-sans-serif, system-ui;
+  --font-body: var(--font-manrope), ui-sans-serif, system-ui;
+
+  /* --- Animations --- */
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
+:root {
+  --background: var(--color-soft-pearl);
+  --foreground: var(--color-cool-slate);
+}
+
+/* Optional: Dark mode override if you want a dark version later */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --foreground: #f8f9fa;
+  }
+} */
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base style for Headings */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-header);
+}
+
+/* Utility for the 'Lighthouse' effect */
+.lighthouse-glow {
+  box-shadow: 0 0 20px rgba(245, 124, 0, 0.2);
 }

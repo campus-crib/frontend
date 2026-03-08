@@ -34,4 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
 # frontend
+
+Role,Color Name,Hex Code,Purpose
+Primary/Action,Burnt Amber,#F57C00,"Buttons, ""Place Bid"" alerts, and logos."
+Surface/Base,Soft Pearl,#F8F9FA,"Main background to keep it airy and ""roomy."""
+Secondary Neutral,Cool Slate,#334155,Typography and primary navigation.
+Accent Neutral,Warm Grey,#E2E8F0,"Border lines, card containers, and input fields."
