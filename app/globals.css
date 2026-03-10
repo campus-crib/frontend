@@ -14,8 +14,8 @@
 
   /* --- Typography --- */
   /* Ensure these variable names match what you pass in your Next.js font loader */
-  --font-header: var(--font-poppins), ui-sans-serif, system-ui;
-  --font-body: var(--font-manrope), ui-sans-serif, system-ui;
+  --font-header: var(--font-figtree), ui-sans-serif, system-ui;
+  --font-body: var(--font-figtree), ui-sans-serif, system-ui;
 
   /* --- Animations --- */
   --animate-marquee: marquee 25s linear infinite;

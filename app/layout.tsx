@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Poppins, Manrope } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
+const figtree = Figtree({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-manrope",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-figtree",
 });
 
 
@@ -27,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${manrope.variable}`}>
+    <html lang="en" className={figtree.variable}>
       <body
         className={`antialiased`}
       >
