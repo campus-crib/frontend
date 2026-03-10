@@ -1,20 +1,27 @@
+import { ArrowRight } from "lucide-react";
+
 export default function ConversionBar() {
+
     return (
-        <div className="bg-white p-2 rounded-3xl shadow-2xl shadow-cool-slate/10 border border-warm-grey flex flex-col md:flex-row gap-2">
-            <select className="flex-1 h-14 px-6 bg-transparent outline-none font-body font-bold text-lg cursor-pointer">
+        <div className="animate-item w-full max-w-3xl bg-soft-pearl p-2 rounded-2xl  border border-warm-grey flex flex-col md:flex-row gap-3 items-center z-20">
+
+            <select className="px-4 py-3 rounded-lg bg-soft-pearl outline-none font-medium text-lg w-full md:w-60 cursor-pointer">
                 <option>Select University</option>
-                <option>UNILAG</option>
+                <option>UNILAG (LAGOS)</option>
                 <option>UI (Ibadan)</option>
-                <option>FUNAAB</option>
+                <option>FUNAAB (ABK)</option>
             </select>
+
             <input
                 type="tel"
-                placeholder="WhatsApp for Portal Alerts"
-                className="flex-[1.5] h-14 px-6 bg-soft-pearl rounded-2xl outline-none font-body focus:ring-2 ring-burnt-amber/20 transition-all"
+                placeholder="Your WhatsApp Number"
+                className="flex-1 px-4 py-3 rounded-lg bg-soft-pearl outline-none font-medium text-lg placeholder:text-slate-400"
             />
-            <button className="h-14 px-10 bg-burnt-amber text-white font-header font-black rounded-2xl hover:scale-[1.02] active:scale-95 transition-all">
-                JOIN WAITLIST
+
+            <button className="px-6 py-3 bg-burnt-amber text-white font-bold rounded-xl hover:brightness-110 active:scale-95 transition flex items-center justify-center gap-2">
+                Get Alerts <ArrowRight size={18} />
             </button>
+
         </div>
     );
 }

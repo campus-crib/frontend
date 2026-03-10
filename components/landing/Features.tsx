@@ -57,7 +57,7 @@ export default function Features() {
     }, []);
 
     return (
-        <section ref={containerRef} className="bg-white py-32 border-t border-warm-grey">
+        <section ref={containerRef} className="bg-white pb-32">
             <div className="max-w-7xl mx-auto px-8">
 
                 {/* Section Header */}
