@@ -20,13 +20,13 @@ export const useOtpInput = (step: AuthStep) => {
 
     // Auto-focus next input
     if (value && index < 5 && otpInputRefs.current[index + 1]) {
-      otpInputRefs.current[index + 1].focus();
+      otpInputRefs?.current[index + 1]?.focus();
     }
   };
 
   const handleOtpKeyDown = (index: number, e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Backspace' && !otp[index] && index > 0 && otpInputRefs.current[index - 1]) {
-      otpInputRefs.current[index - 1].focus();
+      otpInputRefs?.current[index - 1]?.focus();
     }
   };
 
